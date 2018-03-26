@@ -15,6 +15,10 @@
 		8841516F2068D4EA0023A84E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841516E2068D4EA0023A84E /* main.m */; };
 		884151792068D4EA0023A84E /* ShowAllServicesViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 884151782068D4EA0023A84E /* ShowAllServicesViewControllerTests.m */; };
 		884151842068D4EA0023A84E /* ShowAllServicesViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 884151832068D4EA0023A84E /* ShowAllServicesViewControllerUITests.m */; };
+		884151962068D5720023A84E /* ShowAllServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884151952068D5720023A84E /* ShowAllServicesViewController.m */; };
+		884151992068D9270023A84E /* ShowAllServicesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 884151982068D9270023A84E /* ShowAllServicesCell.m */; };
+		8841519D2068D97E0023A84E /* ShowAllServicesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841519C2068D97E0023A84E /* ShowAllServicesModel.m */; };
+		884151A02068DF9D0023A84E /* ShowAllServicesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841519F2068DF9D0023A84E /* ShowAllServicesView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		8841517F2068D4EA0023A84E /* ShowAllServicesViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShowAllServicesViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		884151832068D4EA0023A84E /* ShowAllServicesViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowAllServicesViewControllerUITests.m; sourceTree = "<group>"; };
 		884151852068D4EA0023A84E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		884151942068D5720023A84E /* ShowAllServicesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowAllServicesViewController.h; sourceTree = "<group>"; };
+		884151952068D5720023A84E /* ShowAllServicesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowAllServicesViewController.m; sourceTree = "<group>"; };
+		884151972068D9270023A84E /* ShowAllServicesCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowAllServicesCell.h; sourceTree = "<group>"; };
+		884151982068D9270023A84E /* ShowAllServicesCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowAllServicesCell.m; sourceTree = "<group>"; };
+		8841519B2068D97E0023A84E /* ShowAllServicesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowAllServicesModel.h; sourceTree = "<group>"; };
+		8841519C2068D97E0023A84E /* ShowAllServicesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowAllServicesModel.m; sourceTree = "<group>"; };
+		8841519E2068DF9D0023A84E /* ShowAllServicesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowAllServicesView.h; sourceTree = "<group>"; };
+		8841519F2068DF9D0023A84E /* ShowAllServicesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowAllServicesView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,7 @@
 		8841515E2068D4EA0023A84E /* ShowAllServicesViewController */ = {
 			isa = PBXGroup;
 			children = (
+				884151912068D55C0023A84E /* ShowAllServicesViewController */,
 				8841515F2068D4EA0023A84E /* AppDelegate.h */,
 				884151602068D4EA0023A84E /* AppDelegate.m */,
 				884151622068D4EA0023A84E /* ViewController.h */,
@@ -130,6 +143,45 @@
 				884151852068D4EA0023A84E /* Info.plist */,
 			);
 			path = ShowAllServicesViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		884151912068D55C0023A84E /* ShowAllServicesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8841519A2068D9560023A84E /* Model */,
+				884151922068D55C0023A84E /* Controller */,
+				884151932068D55C0023A84E /* View */,
+			);
+			path = ShowAllServicesViewController;
+			sourceTree = "<group>";
+		};
+		884151922068D55C0023A84E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				884151942068D5720023A84E /* ShowAllServicesViewController.h */,
+				884151952068D5720023A84E /* ShowAllServicesViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		884151932068D55C0023A84E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				884151972068D9270023A84E /* ShowAllServicesCell.h */,
+				884151982068D9270023A84E /* ShowAllServicesCell.m */,
+				8841519E2068DF9D0023A84E /* ShowAllServicesView.h */,
+				8841519F2068DF9D0023A84E /* ShowAllServicesView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8841519A2068D9560023A84E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8841519B2068D97E0023A84E /* ShowAllServicesModel.h */,
+				8841519C2068D97E0023A84E /* ShowAllServicesModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +317,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				884151A02068DF9D0023A84E /* ShowAllServicesView.m in Sources */,
 				884151642068D4EA0023A84E /* ViewController.m in Sources */,
 				8841516F2068D4EA0023A84E /* main.m in Sources */,
+				8841519D2068D97E0023A84E /* ShowAllServicesModel.m in Sources */,
 				884151612068D4EA0023A84E /* AppDelegate.m in Sources */,
+				884151992068D9270023A84E /* ShowAllServicesCell.m in Sources */,
+				884151962068D5720023A84E /* ShowAllServicesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

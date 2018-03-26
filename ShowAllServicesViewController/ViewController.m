@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "ShowAllServicesView.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) ShowAllServicesView *companyServices;
 
 @end
 
@@ -17,6 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSArray *arr = [[NSArray alloc] initWithObjects:@"假数据",@"假数据",@"假数据",@"假数据",@"假数据", nil];
+    self.companyServices = [[ShowAllServicesView alloc] initWithFrame:CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+    [self.companyServices setDataArr:arr title:@"海那边服务"];
+    [self.view addSubview:self.companyServices];
 }
 
 
